@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACCESO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo_acceso.css">
+    
+  </head>
+  
+  <body> 
+    <div class="encabeza">
+    <header>MULTISERVI
+    <p>Servicios A La Orden!!</p> 
+    
+    <nav class="navbar bg-light">
+      <form class="container-fluid justify-content-start">
+        <button onclick="Regresar()" class="btn btn-outline-success me-2" type="button">Regresar</button>
+        <script>
+          function Regresar(){
+              window.location.href ="index.html"
+          }
+        </script>
+        
+          
+      </form>
+    </nav>
+    </header></div>
+    <div class="container">
+     
+    <!--Aqui comienza la barra de navegacion
+    <div class="row">
+        <nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MultiServicio</a>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="acceso.html">ACCESO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">REGISTRO</a>
+        </li>
+      </ul>  
+    </div>
+  </div>
+</nav>
+    </div>-->
+    <!--Aqui termina la barra de navegacion-->
+  
+<!--Aqui comienza el formulario-->
+<div class="row">
+  <main class="form-signin w-100 m-auto text-center">
+    <form method="post" action="login_acceso.php">
+      <img src="imagenes/pastel.jpeg" alt="logo" width="130px" height="130px">
+      
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+      </svg>
+      <h1 class="h3 mb-3 fw-normal">LOG IN</h1>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <br>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="contraseña">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <br>
+    
+  
+     
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+
+      
+<br><br>
+<p>No tienes cuenta</p>  <buton id="registro" >CREAR CUENTA </buton>
+        <script>
+            const registro= document.getElementById("registro");
+            registro.addEventListener("click", function() {
+                      window.location.href = "registrarvista.html"; // Cambia "nueva_pagina.html" por la URL deseada
+                    });
+         </script>
+         
+
+     
+      </form>
+  </main>
+</div>
+</div>
+<!--Aqui termina el formulario-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
+
